@@ -1,0 +1,24 @@
+[project]
+name = "grid"
+version = "0.0.0"
+description = "The grid approach to 'comp' typed component system"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "BSD"}
+authors = [
+    {name = "Yuri Ximenes", email = "ximenesyuri@gmx.ie"},
+]
+dependencies = [
+    "typed @ git+https://github.com/ximenesyuri/typed",
+    "utils @ git+https://github.com/ximenesyuri/utils",
+    "comp  @ git+https://github.com/ximenesyuri/comp"
+]
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["grid*"]
+
